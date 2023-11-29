@@ -2,75 +2,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
 
-.body {
+*{
+  box-sizing: border-box;
+  /* border:1px solid  green; */
+
+}
+
+
+.App {
   font-family: Inter;
   font-style: normal;
   padding: 0 50px 0 50px;
-  box-sizing: border-box;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 364px;
-  font-family: Inter;
-}
-
-ul {
-  display: inline-flex;
-  gap: 45px;
-}
-
-li {
-  list-style: none;
-}
-
-ul li a {
-  text-decoration: none;
-  font-family: Inter;
-  color: var(--Dark, #191720);
-}
-
-.action-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.btn1 {
-  color: var(--Dark, #191720);
-  background-color: white;
-  border: none;
-  text-align: right;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px; /* 175% */
-}
-
-.btn2 {
-  border-radius: 36px;
-  border: none;
-  color: white;
-  width: 115px;
-  height: 56px;
-  flex-shrink: 0;
-  border-radius: 36px;
-  background: #e94339;
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-}
-
+/* 175% */
 .Hero {
   display: flex;
   justify-content: space-between;
@@ -205,6 +150,13 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.food-container > h4 {
+  position: relative;
+  padding: 0px 18px;
 }
 
 .food-circle {
@@ -220,8 +172,17 @@ main {
   margin-left: 150px;
 }
 
-.food-container > h4 {
-  padding: 0px 18px;
+
+.numbering {
+  font-size: 1.5em;
+  color: orange;
+  padding: 10px;
+  /* background-color: blue; */
+  position: relative;
+  top: -20px;
+  right: 55px; 
+  z-index: 0;
+
 }
 
 .main-line-1 {
@@ -458,6 +419,95 @@ main {
   color: #AAA7B1;
 }
 
-.numbering {
-  /* z-index: 0; */
+
+
+
+@media (max-width: 500px) {
+  
+}
+
+@media (max-width: 640px) {
+  
+}
+
+@media (max-width: 800px) {
+  /* .menu > ul {
+    display: none; 
+  }
+
+  .action-buttons {
+    display: none;
+  }
+
+  .Hamburger-Icon {
+    display: block;
+    outline: none;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    border: none;
+    background: none;
+  }
+
+  .hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+
+
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+
+}
+
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  align-self: self-end;
+  padding: 8px 0px;
+  margin-top: 10px;
+  white-space: 6px;
+  font: bold;
+  background-color: #FFF;
+  width: auto;
+  
+} */
+/* class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" */
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  box-sizing: border-box;
+}
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1280px) {
+ 
 }

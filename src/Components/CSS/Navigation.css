@@ -1,0 +1,139 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 364px;
+  font-family: Inter;
+}
+
+ul {
+  display: inline-flex;
+  gap: 45px;
+}
+
+li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: Inter;
+  color: var(--Dark, #191720);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn1,
+.btn2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  border: none;
+}
+
+.btn1 {
+  color: var(--Dark, #191720);
+  background-color: white;
+  text-align: right;
+}
+
+.btn2 {
+  border-radius: 36px;
+  color: white;
+  width: 115px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background: #e94339;
+  text-align: center;
+}
+/* 
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.Hamburger-Icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu,
+  .action-buttons {
+    display: none;
+  }
+
+  .Hamburger-Icon,
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    border: none;
+    background: none;
+  }
+
+
+  .mobile-menu {
+    width: 90%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px 4px rgb(225, 225, 225);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    left: 30px;
+  }
+
+  .mobile-menu a {
+    margin: 10px;
+    color: black;
+  }
+} */

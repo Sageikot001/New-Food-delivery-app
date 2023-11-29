@@ -1,32 +1,25 @@
 import React from "react";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 const Nav = () => {
+
+
+  const windowSize = window.innerWidth;
+  const screenSize = Screen.width;
+  console.log(windowSize);
+  console.log(screenSize);
+
   return (
-    <div className="nav">
-        <img src="./Data/Pizza.svg" alt="#" />
-      <div className="menu">
-        <ul>
-          <li>
-            <a href="#">Restaurants</a>
-          </li>
-          <li>
-            <a href="#">Recipes</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">
-              Page <img src="./Data/VectorD.svg" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="action-buttons">
-        <button className="btn1">Login</button>
-        <button className="btn2">Sign Up</button>
-      </div>
-    </div>
+    <nav>
+      <img src="./Data/Pizza.svg" alt="#" />
+
+      {/* {windowSize > 800 ? <DesktopNav/> :  <MobileNav/>} */}
+
+      <DesktopNav/>
+      {/* <MobileNav/> */}
+      
+    </nav>
   );
 };
 
