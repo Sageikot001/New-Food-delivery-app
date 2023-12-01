@@ -16,11 +16,13 @@ export default function DesktopNav() {
         </ul>
         </div>
 
+    <div>
       <div className="action-buttons">
         <button className="btn1">Login</button>
         <button className="btn2">Sign Up</button>
-      <MobileNav/>
       </div>
+      {/* <MobileNav/> */}
+    </div>
 
 
 

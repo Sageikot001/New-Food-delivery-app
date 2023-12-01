@@ -1,17 +1,25 @@
+import React, { useState }  from 'react';
 import './CSS/MobileNavigation.css';
-
+import './CSS/Navigation.css';
 
 const MobileNav = () => {
+
+    // const mobileMenu = () => {
+        const [isMenuOpen, setIsMenuOpen] = useState(false);
+        const toggleMenu = () => {
+            setIsMenuOpen(!isMenuOpen);
+          };
+
   return (
     <div>
       <div className="Hamburger-Icon">
-        <button className="menu-btn">
+        <button id="menu-btn" className={`btn ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className="mobile-menu" id="menu">
+      <div className={`nav ${isMenuOpen ? 'flex' : 'hidden'}`} id="menu">
         <a href="#">Pricing</a>
         <a href="#">Product</a>
         <a href="#">About Us</a>
@@ -20,6 +28,7 @@ const MobileNav = () => {
       </div>
     </div>
   );
-};
+    };
+// };
 
 export default MobileNav;
