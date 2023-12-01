@@ -13,9 +13,13 @@ function App() {
       <Hero />
       <Main />
       </div>
+
+      <div className='low'>
       <Newsletter/>
       <Footer />
+      </div>
     </div>
+
   );
 }
 

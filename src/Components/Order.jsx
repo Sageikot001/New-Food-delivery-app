@@ -4,7 +4,7 @@ const Order = (props) => {
   return (
        
             <div className="food-container">
-              {/* <div className='numbering'>01</div> */}
+              <div className='numbering'>{props.num}</div>
               <div className="option-rectangle">
                 <img src={`./Data/${props.img}`} alt="#" />
               </div>
